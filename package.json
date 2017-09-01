@@ -1,0 +1,26 @@
+{
+  "name": "timelines",
+  "version": "1.0.0",
+  "description": "Data visualised timelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changelogd/timelines.git"
+  },
+  "keywords": [
+    "timeline",
+    "visjs"
+  ],
+  "author": "David Craig <davidcraig1986@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/changelogd/timelines/issues"
+  },
+  "homepage": "https://github.com/changelogd/timelines#readme",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
+}

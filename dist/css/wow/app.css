@@ -1,0 +1,28 @@
+body {
+    background: #333;
+    color: #ececec;
+}
+
+.vis-labelset .vis-label {
+    color: #ececec;
+}
+
+.vis-time-axis .vis-text {
+    color: #ececec;
+}
+
+.vis-nested-group {
+    background-color: #333;
+}
+
+.point-wow {
+    border-color: #b59e86;
+}
+
+.vis-item.ptr {
+    border-color: #ececec;
+}
+
+.vis-item.patch.legion {
+    border-color: #bdddb8;
+}
