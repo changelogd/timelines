@@ -5,13 +5,13 @@ function buildTimelineData() {
     var ptrToggled = $('#togglePtr').is(':checked');
 
     var timelineData = [
-        world_of_warcraft,
-        the_burning_crusade,
-        wrath_of_the_lich_king,
-        cataclysm,
-        mists_of_pandaria,
-        warlords_of_draenor,
-        legion,
+        releases.wow,
+        releases.tbc,
+        releases.wrath,
+        releases.cata,
+        releases.mists,
+        releases.wod,
+        releases.legion,
     ];
 
     // PTR Patches
@@ -24,7 +24,7 @@ function buildTimelineData() {
 
     // Major Patches
     timelineData = timelineData.concat(wow_major_patches);
-    timelineData = timelineData.concat(legion_patches); // Legion
+    timelineData = timelineData.concat(legionPatches); // Legion
 
     return timelineData;
 }

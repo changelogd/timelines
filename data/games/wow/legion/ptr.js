@@ -4,7 +4,7 @@
 */
 var legionPtrClass = 'legion ptr';
 var ptrPointStyle = 'border-color: #666; color: #ececec;';
-var legionPtrGroup = 'legion_ptr';
+var legionPtrGroup = 'patches_ptr';
 
 // 7.2.0
 var patch7_2_0_ptr = {

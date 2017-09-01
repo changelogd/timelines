@@ -1,7 +1,6 @@
 var pointStyle = 'color: #ececec;';
 var pointClass = 'point-wow';
-var majorPatch = 'wow_patches';
-var minorPatch = 'wow_minor_patches';
+var patchGroup = 'patches_live';
 
 // 1.1.1
 var patch1_1_1 = {
@@ -10,7 +9,7 @@ var patch1_1_1 = {
     type: 'point',
     content: '1.1.1',
     start: '2004-11-17',
-    group: minorPatch,
+    group: patchGroup,
     style: pointStyle,
     className: pointClass,
     classification: 'minor'
@@ -23,7 +22,7 @@ var patch1_1_2 = {
     type: 'point',
     content: '1.1.2',
     start: '2004-12-06',
-    group: minorPatch,
+    group: patchGroup,
     style: pointStyle,
     className: pointClass,
     classification: 'minor'
@@ -36,7 +35,7 @@ var patch1_2_1 = {
     type: 'point',
     content: '1.2.1',
     start: '2004-12-21',
-    group: minorPatch,
+    group: patchGroup,
     style: pointStyle,
     className: pointClass,
     classification: 'minor'
