@@ -35,7 +35,11 @@ timelineData = buildTimelineData();
 var items = new vis.DataSet(timelineData);
 
 // Configuration for the Timeline
-var options = {};
+var options = {
+    min: '2004-11-20',
+    max: '2020-01-01', // This will likely need to be increased in a future date.
+    zoomKey: 'ctrlKey',
+};
 
 // Create a Timeline
 var timeline = new vis.Timeline(container, items, groups, options);
