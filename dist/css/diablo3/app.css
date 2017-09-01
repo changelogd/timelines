@@ -1,0 +1,38 @@
+body {
+    background: #0f1b33;
+    color: #ececec;
+}
+
+a {
+    color: #89ecd3;
+    text-decoration: none;
+}
+
+.vis-labelset .vis-label {
+    color: #ececec;
+}
+
+.vis-time-axis .vis-text {
+    color: #ececec;
+}
+
+.vis-nested-group {
+    background-color: #333;
+}
+
+/* Vis Timeline Borders */
+.vis-foreground .vis-group, .vis-labelset .vis-label {
+    border-bottom-color: #374c77;
+}
+.vis-panel.vis-bottom, .vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right, .vis-panel.vis-top,
+.vis-timeline,
+.vis-time-axis .vis-grid.vis-major,
+.vis-time-axis .vis-grid.vis-minor
+{
+    border-color: #374c77;
+}
+
+/* Vis Items */
+.feature.vis-dot {
+    border: none;
+}
