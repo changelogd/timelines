@@ -52,7 +52,7 @@ var releases = {
     legion: {
         id: 'legion-release',
         content: 'Legion',
-        start: '2016-08-30', end: '2018-11-25', // Placeholder
+        start: '2016-08-30', end: '2018-09-21', // On or before
         group: releaseGroup,
         style: 'background: #256d19; color: #bdddb8;',
         classification: 'release'
