@@ -25,6 +25,10 @@ var legionPatchData = {
     730: {
         patch: '7.3.0',
         date: '2017-08-29',
+    },
+    735: {
+        patch: '7.3.5',
+        date: '2018-01-16',
     }
 }
 
