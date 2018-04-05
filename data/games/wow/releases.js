@@ -52,9 +52,17 @@ var releases = {
     legion: {
         id: 'legion-release',
         content: 'Legion',
-        start: '2016-08-30', end: '2018-09-21', // On or before
+        start: '2016-08-30', end: '2018-08-13',
         group: releaseGroup,
         style: 'background: #256d19; color: #bdddb8;',
+        classification: 'release'
+    },
+    bfa: {
+        id: 'bfa-release',
+        content: 'Battle for Azeroth',
+        start: '2018-08-14', end: '2020-08-13', // Placeholder end date
+        group: releaseGroup,
+        style: 'background: #590509; color: #e08286;',
         classification: 'release'
     }
 }
