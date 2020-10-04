@@ -60,9 +60,17 @@ var releases = {
     bfa: {
         id: 'bfa-release',
         content: 'Battle for Azeroth',
-        start: '2018-08-14', end: '2020-08-13', // Placeholder end date
+        start: '2018-08-14', end: '2020-12-30', // Placeholder end date
         group: releaseGroup,
         style: 'background: #590509; color: #e08286;',
+        classification: 'release'
+    },
+    sl: {
+        id: 'sl-release',
+        content: 'Shadowlands',
+        start: '2020-12-31', end: '2022-12-31', // Placeholder dates
+        group: releaseGroup,
+        style: 'background: #29a9cc; color: #ececec;',
         classification: 'release'
     }
 }

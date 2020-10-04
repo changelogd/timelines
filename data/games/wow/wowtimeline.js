@@ -12,12 +12,14 @@ function buildTimelineData() {
         releases.mists,
         releases.wod,
         releases.legion,
-        releases.bfa
+        releases.bfa,
+        releases.sl
     ];
 
     // PTR Patches
     if (true === ptrToggled) {
         timelineData = timelineData.concat(legion_ptr_patches); // Legion
+        timelineData = timelineData.concat(bfa_ptr_patches); // BfA
     }
 
     // Minor Patches
@@ -26,6 +28,7 @@ function buildTimelineData() {
     // Major Patches
     timelineData = timelineData.concat(wow_major_patches);
     timelineData = timelineData.concat(legionPatches); // Legion
+    timelineData = timelineData.concat(bfaPatches); // Legion
 
     return timelineData;
 }
@@ -38,7 +41,7 @@ var items = new vis.DataSet(timelineData);
 // Configuration for the Timeline
 var options = {
     min: '2004-11-20',
-    max: '2021-01-01', // This will likely need to be increased in a future date.
+    max: '2022-12-30', // This will likely need to be increased in a future date.
     zoomKey: 'ctrlKey',
 };
 
