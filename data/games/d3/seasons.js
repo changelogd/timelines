@@ -3,6 +3,7 @@ var seasonPointClass = 'season';
 
 var seasons = [];
 
+// Useful reference: https://diablo.fandom.com/wiki/Season
 var seasonData = {
     1: { start: '2014-08-29', end: '2015-02-03' },
     2: { start: '2015-02-13', end: '2015-04-05' },
