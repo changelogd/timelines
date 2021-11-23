@@ -88,6 +88,10 @@ var patchData = {
         patch: '2.6.0',
         date: '2017-06-27'
     },
+    271: {
+        patch: '2.7.1',
+        date: '2021-06-20'
+    }
 }
 
 for (key in patchData) {
