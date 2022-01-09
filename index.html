@@ -102,7 +102,7 @@
 				<li>
           <div class='card'>
             <a href="./diablo3/index.html">
-              <div class='card-image' style='--img: url(/timelines/images/games/diablo-3.jpg);' />
+              <div id='d3-img' class='card-image' style='--img: url(/timelines/images/games/diablo-3.jpg);' />
               <span class='title'>Diablo 3</span>
             </a>
           </div>
@@ -110,12 +110,32 @@
         <li>
           <div class='card'>
             <a href="./wow/index.html">
-              <div class='card-image' style='--img: url(/timelines/images/games/world-of-warcraft.jpg);' />
+              <div id='wow-img' class='card-image' style='--img: url(/timelines/images/games/world-of-warcraft.jpg);' />
               <span class='title'>World of Warcraft</span>
             </a>
           </div>
         </li>
 			</ul>
 		</section>
+
+    <script>
+      /* For easier local development with liveserver
+         we need to remove /timelines/ */
+      (() => {
+        if (window.location.hostname === '127.0.0.1') {
+          const cardImages = ['d3-img', 'wow-img']
+
+          cardImages.forEach(selector => {
+            const el = document.getElementById(selector)
+            const style = el.style
+            const currentImg = style.getPropertyValue('--img')
+            const newImg = currentImg
+            .replaceAll('\\', '')
+            .replace('/timelines/', '/')
+            style.setProperty('--img', newImg)
+          })
+        }
+      })()
+    </script>
 	</body>
 </html>

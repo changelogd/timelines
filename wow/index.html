@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1>World of Warcraft Timeline</h1>
-    <a href="/timelines/">Back to timelines</a>
+    <a id='timelines' href="/timelines/">Back to timelines</a>
     <p>Hold ctrl key and use mousewheel to zoom in/out.</p>
 
     <div class="filters">
@@ -34,5 +34,15 @@
     <script type="text/javascript" src="../data/games/wow/bfa/patches.js"></script>
     <script type="text/javascript" src="../data/games/wow/bfa/ptr.js"></script>
     <script type="text/javascript" src="../data/games/wow/wowtimeline.js"></script>
+
+    <script>
+      /* For easier local development with liveserver
+         we need to remove /timelines/ */
+      (() => {
+        if (window.location.hostname === '127.0.0.1') {
+          document.getElementById('timelines').href = '/'
+        }
+      })()
+    </script>
   </body>
 </html>
