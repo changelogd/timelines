@@ -40,7 +40,7 @@ for (const key in legionPatchData) {
     start: data.date,
     group: 'patches_live',
     type: 'point',
-    style: 'color: #ececec;',
+    style: 'color: var(--legion-fg);',
     className: legionPoint
   }
 

@@ -1,8 +1,10 @@
 :root {
   --wow-bg: #b59e86;
-  --legion-bg:#256d19;
-  --bfa-bg:#590509;
-  --shadowlands-bg:#29a9cc;
+  --legion-bg: #256d19;
+  --legion-fg: #bdddb8;
+  --bfa-bg: #590509;
+  --bfa-fg: #e08286;
+  --shadowlands-bg: #29a9cc;
 }
 
 body {

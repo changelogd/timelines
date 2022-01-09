@@ -58,7 +58,7 @@ for (const key in bfaPatchData) {
     start: data.date,
     group: 'patches_live',
     type: 'point',
-    style: 'color: #ececec;',
+    style: 'color: var(--bfa-fg);',
     className: bfaClass
   }
 
