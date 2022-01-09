@@ -2,6 +2,34 @@
 <html lang="en">
 	<head>
 		<title>Changelogd - Timelines</title>
+    <style>
+      :root {
+        --bg: #ececec;
+        --text: #333;
+        --link: hsl(240, 100%, 50%);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131313;
+          --text: #ececec;
+          --link: hsl(200, 100%, 50%);
+        }
+      }
+
+      html {
+        background-color: var(--bg);
+      }
+
+      body {
+        color: var(--text);
+      }
+
+      a, a:link, a:visited {
+        color: var(--link);
+      }
+
+    </style>
 	</head>
 	<body>
 		<h1>Timelines</h1>
