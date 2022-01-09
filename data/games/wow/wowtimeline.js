@@ -11,7 +11,7 @@ const container = document.getElementById('timeline')
 function buildTimelineData () {
   const ptrToggled = $('#togglePtr').is(':checked')
 
-  const timelineData = [
+  const data = [
     releases.wow,
     releases.tbc,
     releases.wrath,
@@ -25,16 +25,16 @@ function buildTimelineData () {
 
   // PTR Patches
   if (ptrToggled) {
-    timelineData.push(...ptr)
+    data.push(...ptr)
   }
 
   // Minor Patches
-  timelineData.push(...minorPatches)
+  data.push(...minorPatches)
 
   // Major Patches
-  timelineData.push(...patches)
+  data.push(...patches)
 
-  return timelineData
+  return data
 }
 
 const timelineData = buildTimelineData()
