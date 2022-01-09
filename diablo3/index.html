@@ -16,18 +16,13 @@
     <a id='timelines' href="/timelines/">Back to timelines</a>
     <p>Hold ctrl key and use mousewheel to zoom in/out.</p>
 
-    <div class="filters">
-      <!--<label><abbr title="Public Test Realm">PTR</abbr><input type="checkbox" id="togglePtr" /></label>-->
-    </div>
-
     <div id="timeline"></div>
 
     <script type="text/javascript" src="../dist/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../dist/js/vis.min.js"></script>
     <script type="module" src="../data/games/d3/timeline.js"></script>
     <script>
-      /* For easier local development with liveserver
-         we need to remove /timelines/ */
+      // For easier local development with liveserver we need to remove /timelines/
       (() => {
         if (window.location.hostname === '127.0.0.1') {
           document.getElementById('timelines').href = '/'
