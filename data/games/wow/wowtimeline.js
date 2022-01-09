@@ -40,7 +40,7 @@ function buildTimelineData () {
   return timelineData
 }
 
-let timelineData = buildTimelineData()
+const timelineData = buildTimelineData()
 
 // Create a DataSet (allows two way data-binding)
 const items = new vis.DataSet(timelineData)
@@ -57,7 +57,7 @@ const timeline = new vis.Timeline(container, items, groups, options)
 
 // Update data and timeline on filter click.
 $('.filters input').click(function () {
-  timelineData = buildTimelineData()
+  const newTimelineData = buildTimelineData()
 
-  timeline.setItems(timelineData)
+  timeline.setItems(newTimelineData)
 })
