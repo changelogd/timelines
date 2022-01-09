@@ -1,7 +1,7 @@
-var seasonPointStyle = '';
-var seasonPointClass = 'season';
+var seasonPointStyle = ''
+var seasonPointClass = 'season'
 
-var seasons = [];
+var seasons = []
 
 // Useful reference: https://diablo.fandom.com/wiki/Season
 var seasonData = {
@@ -33,24 +33,26 @@ var seasonData = {
 }
 
 // Build the season array.
-for (s = 1; s <= 999; s++) {
+for (let s = 1; s <= 999; s++) {
     if (seasonData[s]) { // check season number exists
         if (seasonData[s].start) { // check has a start date
             var season = {}
-            season.start = seasonData[s].start;
+            season.start = seasonData[s].start
             if (seasonData[s].end) {
-                season.end = seasonData[s].end;
+                season.end = seasonData[s].end
             } else {
-                seasonPointStyle = 'color: #ececec;';
-                season.type = 'point';
+                seasonPointStyle = 'color: #ececec'
+                season.type = 'point'
             }
-            season.content = 'Season ' + s;
-            season.style = seasonPointStyle;
-            season.group = 'seasons';
-            season.className = seasonPointClass;
-            seasons.push(season);
+            season.content = 'Season ' + s
+            season.style = seasonPointStyle
+            season.group = 'seasons'
+            season.className = seasonPointClass
+            seasons.push(season)
         }
     } else {
-        break;
+        break
     }
 }
+
+export default seasons

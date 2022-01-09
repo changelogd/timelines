@@ -1,6 +1,13 @@
-var timelineData = [];
+import releases from './releases.js'
+import patches from './patches.js'
+import seasons from './seasons.js'
+import features from './features.js'
 
-timelineData = timelineData.concat(releases); // Releases
-timelineData = timelineData.concat(seasons); // Seasons
-timelineData = timelineData.concat(patches); // Patches
-timelineData = timelineData.concat(features); // Features
+const timelineData = [
+  ...releases,
+  ...patches,
+  ...seasons,
+  ...features
+]
+
+export default timelineData

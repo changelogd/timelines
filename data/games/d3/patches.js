@@ -1,7 +1,7 @@
-var patch_style = 'color: #ececec;';
-var patches = [];
+const patch_style = 'color: #ececec;'
+const patches = []
 
-var patchData = {
+const patchData = {
     107: {
         patch: '1.0.7',
         date: '2013-02-13',
@@ -102,8 +102,8 @@ var patchData = {
     }
 }
 
-for (key in patchData) {
-    var data = patchData[key];
+for (const key in patchData) {
+    var data = patchData[key]
     var p = {
         content: 'Patch ' + data.patch,
         start: data.date,
@@ -112,5 +112,7 @@ for (key in patchData) {
         style: patch_style
     }
 
-    patches.push(p);
+    patches.push(p)
 }
+
+export default patches
