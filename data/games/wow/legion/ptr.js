@@ -33,7 +33,9 @@ var patch7_2_5_ptr = {
 };
 
 // Define patch array for inclusion in timeline.
-var legion_ptr_patches = [
-    patch7_2_0_ptr,
-    patch7_2_5_ptr,
+var legionPtrPatches = [
+  patch7_2_0_ptr,
+  patch7_2_5_ptr,
 ];
+
+export default legionPtrPatches

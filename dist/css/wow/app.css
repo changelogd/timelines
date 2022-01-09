@@ -1,28 +1,22 @@
+:root {
+  --wow-bg: #b59e86;
+  --legion-bg:#256d19;
+  --bfa-bg:#590509;
+  --shadowlands-bg:#29a9cc;
+}
+
 body {
-    background: #333;
-    color: #ececec;
+  background: #333;
+  color: #ececec;
 }
 
-.vis-labelset .vis-label {
-    color: #ececec;
-}
+.vis-labelset .vis-label { color: #ececec; }
+.vis-time-axis .vis-text { color: #ececec; }
+.vis-nested-group { background-color: #333; }
+.vis-item.ptr { border-color: #ececec; }
+.vis-item.patch.legion { border-color: #bdddb8; }
 
-.vis-time-axis .vis-text {
-    color: #ececec;
-}
-
-.vis-nested-group {
-    background-color: #333;
-}
-
-.point-wow {
-    border-color: #b59e86;
-}
-
-.vis-item.ptr {
-    border-color: #ececec;
-}
-
-.vis-item.patch.legion {
-    border-color: #bdddb8;
-}
+.point-wow { border-color: var(--wow-bg); }
+.point-legion { border-color: var(--legion-bg); }
+.point-bfa { border-color: var(--bfa-bg); }
+.point-shadowlands { border-color: var(--shadowlands-bg); }
