@@ -33,9 +33,6 @@ function buildTimelineData () {
 
   // Major Patches
   timelineData.push(...patches)
-  // timelineData.concat(wow_major_patches)
-  // timelineData.concat(legionPatches) // Legion
-  // timelineData.concat(bfaPatches) // Legion
 
   return timelineData
 }
