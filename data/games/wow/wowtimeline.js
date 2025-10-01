@@ -20,7 +20,9 @@ function buildTimelineData () {
     releases.wod,
     releases.legion,
     releases.bfa,
-    releases.sl
+    releases.sl,
+    releases.df,
+    releases.tww
   ]
 
   // PTR Patches
@@ -45,7 +47,7 @@ const items = new vis.DataSet(timelineData)
 // Configuration for the Timeline
 const options = {
   min: '2004-11-20',
-  max: '2022-12-30', // This will likely need to be increased in a future date.
+  max: '2027-01-01', // This will likely need to be increased in a future date.
   zoomKey: 'ctrlKey'
 }
 

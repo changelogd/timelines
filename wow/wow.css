@@ -5,6 +5,9 @@
   --bfa-bg: #590509;
   --bfa-fg: #e08286;
   --shadowlands-bg: #29a9cc;
+  --dragonflight-fg: #afadb4ff;
+  --dragonflight-bg: rgb(123, 122, 124);
+  --tww-fg: #fe7e00;
 }
 
 body {
@@ -22,3 +25,5 @@ body {
 .point-legion { border-color: var(--legion-bg); }
 .point-bfa { border-color: var(--bfa-bg); }
 .point-shadowlands { border-color: var(--shadowlands-bg); }
+.point-dragonflight { border-color: var(--dragonflight-fg); }
+.point-tww { border-color: var(--tww-fg); }

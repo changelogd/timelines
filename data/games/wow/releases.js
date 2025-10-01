@@ -81,7 +81,25 @@ const releases = {
     group: releaseGroup,
     style: 'background: #29a9cc; color: #ececec;',
     classification: 'release'
-  }
+  },
+  df: {
+    id: 'df-release',
+    content: 'Dragonflight',
+    start: '2022-12-31',
+    end: '2024-08-22',
+    group: releaseGroup,
+    style: 'background: #afadb4ff; color: #000;',
+    classification: 'release'
+  },
+  tww: {
+    id: 'tww-release',
+    content: 'The War Within',
+    start: '2024-08-22', // Early access: 22/08/2024, Full release: 26/08/2024
+    end: '2026-12-31', // Placeholder end date
+    group: releaseGroup,
+    style: 'background: #fe7e00; color: #4f0000;',
+    classification: 'release'
+  },
 }
 
 export default releases
