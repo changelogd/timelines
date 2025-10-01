@@ -5,6 +5,7 @@
 const pointStyle = 'color: #ececec;'
 const pointClass = 'point-wow'
 const patchGroup = 'patches_live'
+const patchGroupAlt = 'patches_live_alt'
 
 // 1.1.0
 const patch110 = {

@@ -10,13 +10,19 @@ const bfaPatchData = {
   801: {
     // https://wow.gamepedia.com/Patch_8.0.1
     patch: '8.0.1',
-    date: '2018-07-17'
+    date: '2018-07-17',
+    group: 'patches_live_prepatch',
   },
 
   810: {
     // https://wow.gamepedia.com/Patch_8.1.0
     patch: '8.1.0',
     date: '2018-12-11'
+  },
+
+  ["8.1.0a"]: {
+    patch: '8.1.0a',
+    date: '2019-01-22',
   },
 
   815: {
@@ -56,7 +62,7 @@ for (const key in bfaPatchData) {
   const p = {
     content: data.patch,
     start: data.date,
-    group: 'patches_live',
+    group: data.group ?? 'patches_live_alt',
     type: 'point',
     style: 'color: var(--bfa-fg);',
     className: bfaClass

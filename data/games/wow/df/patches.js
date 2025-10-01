@@ -9,6 +9,7 @@ const dfPatchData = {
   10_0_0: {
     patch: '10.0.0',
     date: '2022-10-25',
+    group: 'patches_live_prepatch',
   },
   10_0_2: {
     patch: '10.0.2',
@@ -73,7 +74,7 @@ for (const key in dfPatchData) {
   const p = {
     content: data.patch,
     start: data.date,
-    group: 'patches_live',
+    group: data.group ?? 'patches_live_alt',
     type: 'point',
     style: 'color: var(--dragonflight-fg);',
     className: dfPoint

@@ -1,14 +1,24 @@
 const groups = [
   // Patches
   {
-    id: 'patches_ptr',
+    id: 'patches_live_prepatch',
     order: 3,
+    content: 'Live (Pre-Patch)'
+  },
+  {
+    id: 'patches_ptr',
+    order: 4,
     content: 'PTR'
   },
   {
     id: 'patches_live',
-    order: 4,
+    order: 5,
     content: 'Live'
+  },
+  {
+    id: 'patches_live_alt',
+    order: 6,
+    content: 'Live (Alternate)',
   },
   {
     id: 'patches',
@@ -16,7 +26,9 @@ const groups = [
     content: 'Patches',
     nestedGroups: [
       'patches_ptr',
-      'patches_live'
+      'patches_live',
+      'patches_live_alt',
+      'patches_live_prepatch',
     ]
   },
   // Releases

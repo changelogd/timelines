@@ -9,6 +9,7 @@ const twwPatchData = {
   1100: {
     patch: '11.0.0',
     date: '2024-07-23',
+    group: 'patches_live_prepatch',
     // Warbands
     // Skyriding extended to all flying mounts
     // Questline: Visions of Azeroth
@@ -56,7 +57,7 @@ for (const key in twwPatchData) {
   const p = {
     content: data.patch,
     start: data.date,
-    group: 'patches_live',
+    group: data.group ?? 'patches_live',
     type: 'point',
     style: 'color: var(--tww-fg);',
     className: twwPoint
