@@ -6,6 +6,12 @@ const legionPoint = 'point-legion'
 const legionPatches = []
 
 const legionPatchData = {
+  703: {
+    patch: '7.0.3',
+    date: '2016-02-18',
+    group: 'patches_live_prepatch',
+  },
+
   710: {
     patch: '7.1.0',
     date: '2016-10-25'
@@ -26,6 +32,10 @@ const legionPatchData = {
     patch: '7.3.0',
     date: '2017-08-29'
   },
+  732: {
+    patch: '7.3.2',
+    date: '2017-10-24'
+  },
   735: {
     patch: '7.3.5',
     date: '2018-01-16'
@@ -38,7 +48,7 @@ for (const key in legionPatchData) {
   const p = {
     content: data.patch,
     start: data.date,
-    group: 'patches_live',
+    group: data.group ?? 'patches_live',
     type: 'point',
     style: 'color: var(--legion-fg);',
     className: legionPoint
